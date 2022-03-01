@@ -1,0 +1,80 @@
+/* PC */
+
+@media (min-width: 64em) {}
+
+
+/* Table */
+
+@media (min-width: 46.25em) and (max-width:63.9375em) {
+    .model-content {
+        width: 500px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 46.1875em) {
+    #header {
+        overflow: hidden;
+    }
+    #nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav a {
+        width: 100%;
+    }
+    #nav>li:first-child a {
+        width: auto;
+    }
+    #header .header-search {
+        display: none;
+    }
+    #header .header-list {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #nav .sub-nav {
+        position: initial;
+        background-color: #000;
+        width: 100%;
+    }
+    #nav .sub-nav a {
+        padding-left: 32px;
+        color: #ffffff;
+    }
+    #nav .sub-nav a:hover {
+        color: #000;
+    }
+    #content .about-team {
+        flex-direction: column;
+    }
+    #slider .text-content {
+        display: none;
+    }
+    #content .member-img {
+        width: 220px;
+        height: 220px;
+    }
+    #tour-content .place-list {
+        flex-direction: column;
+    }
+    #tour-content .place-item {
+        margin-bottom: 16px;
+    }
+    .btn {
+        width: 100%;
+    }
+    #content .contact-section {
+        flex-direction: column;
+    }
+    #content .contact-form .row1 {
+        flex-direction: column;
+    }
+    #content .contact-form .row1 input {
+        margin-top: 8px;
+    }
+}
